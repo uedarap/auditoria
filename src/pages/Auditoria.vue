@@ -1,4 +1,5 @@
 <template>
+    <h1>Hello from Auditoria</h1>
     <div class="q-pa-md">
         <q-table
             title="Auditoria"
@@ -12,18 +13,27 @@
 
 <script lang="ts">
     import { defineComponent } from 'vue';
+    import { QTable } from 'quasar';
+
+    const columns = [
+    { name: 'acaoRealizada', label: 'Ação Realizada', field: 'acaoRealizada', sortable: true, align: 'left' as 'left' },
+    { name: 'dataAlteracao',  label: 'Data de Alteração', field: 'dataAlteracao', sortable: true },
+    { name: 'idUsuario',  label: 'Id Usuário', field: 'acaoRealizada', sortable: true },
+    { name: 'nomeUsuario',  label: 'Nome Usuário', field: 'nomeUsuario', sortable: true }
+]
+    const rows = [
+                    { acaoRealizada: 'Alteração de Nome', dataAlteracao: '19/01/2023', idUsuario: 20, nomeUsuario: 'Ueda'}
+                ]
 
     export default defineComponent({
         name: "PaginaAuditoria",
-        data() {
+        components: {
+            QTable,
+        },
+        setup() {
             return {
-                columns: [
-                    { name: 'acao-realizada', align: 'left', label: 'Ação Realizada', field: 'acao-realizada', sortable: true },
-                    { name: 'data-alteracao', align: 'left', label: 'Data de Alteração', field: 'data-alteracao', sortable: true },
-                    { name: 'id-usuario', align: 'left', label: 'Id Usuário', field: 'acao-realizada', sortable: true },
-                    { name: 'nome-usuario', align: 'left', label: 'Nome Usuário', field: 'nome-usuario', sortable: true }
-                ],
-                rows: []
+                rows,
+                columns
             }
         }
     })
