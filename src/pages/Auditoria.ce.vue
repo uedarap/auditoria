@@ -30,7 +30,11 @@
                             { name: 'nomeUsuario',  label: 'Nome Usuário', field: 'nomeUsuario', sortable: true, align: 'left' as 'left' }
                         ],
             }
-        }
+        },
     })
 
 </script>
+
+<style lang="scss">
+  @import url('quasar/dist/quasar.prod.css');
+</style>

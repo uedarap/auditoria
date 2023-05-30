@@ -10,5 +10,9 @@
     {
       "path": "./tsconfig.cypress-ct.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "allowJs": true,
+  }
 }

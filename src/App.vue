@@ -7,6 +7,6 @@
   <PaginaAuditoria></PaginaAuditoria>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+  @import url('quasar/dist/quasar.prod.css');
 </style>
