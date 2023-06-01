@@ -14,8 +14,7 @@ export default defineConfig({
       template: { transformAssetUrls }
     }), 
     quasar({
-
-      // sassVariables: 'src/quasar-variables.sass'
+      // sassVariables: 'quasar/dist/quasar.sass'
     }),
     vueJsx()
   ],
@@ -29,7 +28,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: "./src/main.ce.ts",
+      entry: "./src/maince.ts",
       // formats: ["es", "cjs"],
       name: "pagina-auditoria",
       // fileName: (format) => (format == 'es' ? "index.js" : "index.cjs"),
