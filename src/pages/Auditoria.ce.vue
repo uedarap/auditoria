@@ -14,6 +14,7 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
     import { QTable } from 'quasar'
+    import '@quasar/extras/material-icons/material-icons.css'
 
     export default defineComponent({
         name: "PaginaAuditoria",

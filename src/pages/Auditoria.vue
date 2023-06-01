@@ -14,6 +14,7 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
     import { QTable } from 'quasar'
+    import '@quasar/extras/material-icons/material-icons.css'
 
     export default defineComponent({
         name: "PaginaAuditoria",
@@ -35,5 +36,5 @@
 
 </script>
 <style lang="scss">
-  @import url('quasar/dist/quasar.prod.css');
+  @import '../css/index.scss';
 </style>

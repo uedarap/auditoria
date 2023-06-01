@@ -2,10 +2,12 @@ import App from './App.vue';
 import AuditoriaCeVue from './pages/Auditoria.vue';
 import { createApp, defineCustomElement, h, getCurrentInstance } from 'vue';
 import { Quasar } from 'quasar';
-import * as css from 'quasar/dist/quasar.prod.css'
 
 // Import Quasar css
 import 'quasar/src/css/index.sass'
+
+// Import icon libraries
+import '@quasar/extras/material-icons/material-icons.css'
 
 
 const app = createApp(AuditoriaCeVue);

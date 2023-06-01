@@ -28,7 +28,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: "./src/maince.ts",
+      entry: "./src/main.ce.ts",
       // formats: ["es", "cjs"],
       name: "pagina-auditoria",
       // fileName: (format) => (format == 'es' ? "index.js" : "index.cjs"),
